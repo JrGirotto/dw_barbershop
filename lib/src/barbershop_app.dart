@@ -19,8 +19,9 @@ class BarbershopApp extends StatelessWidget {
           navigatorObservers: [asyncNavigatorObserver],
           routes: {
             '/': (_) => const SplashPage(),
-            '/auth/login': (_) => const LoginPage()
-
+            '/auth/login': (_) => const LoginPage(),
+            '/home/adm' : (_) => const Text('ADM'),
+            '/home/employee': (_) => const Text('EMPLOYEE'),
           },
         );
       },
